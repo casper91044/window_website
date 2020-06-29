@@ -18,6 +18,20 @@ body {
   color: red;
 }
 
+.faded {
+  animation-name: faded;
+  animation-duration: 1.5s;
+}
+
+@keyframes faded {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -1053,9 +1067,9 @@ textarea:focus {
   background: url(../img/modal_calc/check.png) center center no-repeat;
 }
 
-.no-background {
-  background: url();
-}
+/*.no-background {*/
+/*  background: url();*/
+/*}*/
 
 .checkbox-custom[id="warm"]::before {
   background: url(../img/modal_calc/check_warm.png) center center no-repeat;
